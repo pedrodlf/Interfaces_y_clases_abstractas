@@ -4,6 +4,7 @@ modelos\Presupuestos.class
 modelos\Facturas.class
 modelos\Usuarios.class
 acciones\UpdateUser.class
+acciones\Budget.class
 acciones\PintarConceptos.class
 com\mycompany\xxxproyectoxxx\HeeramientaHibernate.class
 acciones\Billing.class
