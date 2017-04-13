@@ -205,19 +205,19 @@
                                     <%}%> 
                                     <div id='pppp' class="row uniform" >
                                         <div class="6u 12u$(small)">
-                                            <h5>Nombre Concepto</h5>
+                                            
                                             <input type="text" name="nombreConcepto" id="nombreConcepto" value="" placeholder="-Concepto-"/>
                                         </div>
                                         <div class="2u 12u$(xsmall)">
-                                            <h5>Unidades</h5>
+                                          
                                             <input type="text" name="cantidad" id="cantidadpr" value="" placeholder="Unidades" />
                                         </div>
                                         <div class="2u 12u$(xsmall)">
-                                            <h5>Precio Base/€</h5>
+                                           
                                             <input type="text" name="base" id="basepr" value="" placeholder="Base" />
                                         </div>
                                         <div class="2u 12u$(xsmall)">
-                                            <h5>IVA%</h5>
+                                       
                                             <input type="text" name="iva" id="ivapro" value="" placeholder="IVA%" />
                                         </div>
                                         <div class="12u$" id="txtdes" style="display:none">
