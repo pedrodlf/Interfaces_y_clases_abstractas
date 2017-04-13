@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-abr-2017 11:45:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Facturas" table="facturas" catalog="proyectox" optimistic-lock="version">
+        <id name="idFactura" type="java.lang.Integer">
+            <column name="id_factura" />
+            <generator class="identity" />
+        </id>
+        <property name="nickName" type="string">
+            <column name="nick_name" length="45" not-null="true" />
+        </property>
+        <property name="numeroFactura" type="int">
+            <column name="numero_factura" not-null="true" />
+        </property>
+        <property name="fecha" type="string">
+            <column name="fecha" length="20" not-null="true" />
+        </property>
+        <property name="fechaVencimiento" type="string">
+            <column name="fecha_vencimiento" length="20" not-null="true" />
+        </property>
+        <property name="nombreCliente" type="string">
+            <column name="nombre_cliente" length="60" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

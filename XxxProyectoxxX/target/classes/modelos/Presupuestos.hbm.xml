@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-abr-2017 11:45:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Presupuestos" table="presupuestos" catalog="proyectox" optimistic-lock="version">
+        <id name="idPresupuesto" type="java.lang.Integer">
+            <column name="id_presupuesto" />
+            <generator class="identity" />
+        </id>
+        <property name="nickName" type="string">
+            <column name="nick_name" length="45" not-null="true" />
+        </property>
+        <property name="fecha" type="string">
+            <column name="fecha" length="45" not-null="true" />
+        </property>
+        <property name="fechaVencimiento" type="string">
+            <column name="fecha_vencimiento" length="45" not-null="true" />
+        </property>
+        <property name="estado" type="int">
+            <column name="estado" not-null="true" />
+        </property>
+        <property name="nombreCliente" type="string">
+            <column name="nombre_cliente" length="60" not-null="true" />
+        </property>
+        <property name="numeroPresupuesto" type="string">
+            <column name="numero_presupuesto" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

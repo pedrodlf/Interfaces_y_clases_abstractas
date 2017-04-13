@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-abr-2017 11:45:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Conceptos" table="conceptos" catalog="proyectox" optimistic-lock="version">
+        <id name="idConcepto" type="java.lang.Integer">
+            <column name="id_concepto" />
+            <generator class="identity" />
+        </id>
+        <property name="nickName" type="string">
+            <column name="nick_name" length="45" not-null="true" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="65535" />
+        </property>
+        <property name="base" type="string">
+            <column name="base" length="15" not-null="true" />
+        </property>
+        <property name="iva" type="string">
+            <column name="iva" length="15" not-null="true" />
+        </property>
+        <property name="nombreConcepto" type="string">
+            <column name="nombre_concepto" length="45" not-null="true" />
+        </property>
+        <property name="numeroFactura" type="int">
+            <column name="numero_factura" not-null="true" />
+        </property>
+        <property name="cantidad" type="int">
+            <column name="cantidad" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
