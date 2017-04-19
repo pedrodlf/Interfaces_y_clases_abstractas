@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-abr-2017 13:38:43 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.poliformismohibernate.modelos.TodoTerreno" table="todo_terreno" catalog="test" optimistic-lock="version">
+        <id name="idVehiculo" type="java.lang.Integer">
+            <column name="id_vehiculo" />
+            <generator class="identity" />
+        </id>
+        <property name="color" type="string">
+            <column name="color" length="45" not-null="true" />
+        </property>
+        <property name="esAutomatico" type="string">
+            <column name="es_automatico" length="25" not-null="true" />
+        </property>
+        <property name="numeroDeRuedas" type="string">
+            <column name="numero_de_ruedas" length="25" not-null="true" />
+        </property>
+        <property name="es4x4" type="string">
+            <column name="es_4x4" length="10" not-null="true" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="modelo" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

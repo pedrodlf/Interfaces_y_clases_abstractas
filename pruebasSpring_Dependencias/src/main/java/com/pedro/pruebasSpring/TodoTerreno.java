@@ -9,6 +9,7 @@ package com.pedro.pruebasSpring;
 public class TodoTerreno  implements java.io.Serializable {
 
 
+   
      private Integer idVehiculo;
      private String color;
      private String esAutomatico;
@@ -19,59 +20,71 @@ public class TodoTerreno  implements java.io.Serializable {
     public TodoTerreno() {
     }
 
-    public TodoTerreno(String color, String esAutomatico, String numeroDeRuedas, String es4x4, String modelo) {
-       this.color = color;
-       this.esAutomatico = esAutomatico;
-       this.numeroDeRuedas = numeroDeRuedas;
-       this.es4x4 = es4x4;
-       this.modelo = modelo;
-    }
-   
-    public Integer getIdVehiculo() {
-        return this.idVehiculo;
-    }
-    
-    public void setIdVehiculo(Integer idVehiculo) {
+    public TodoTerreno(Integer idVehiculo, String color, String esAutomatico, String numeroDeRuedas, String es4x4, String modelo) {
         this.idVehiculo = idVehiculo;
-    }
-    public String getColor() {
-        return this.color;
-    }
-    
-    public void setColor(String color) {
         this.color = color;
-    }
-    public String getEsAutomatico() {
-        return this.esAutomatico;
-    }
-    
-    public void setEsAutomatico(String esAutomatico) {
         this.esAutomatico = esAutomatico;
-    }
-    public String getNumeroDeRuedas() {
-        return this.numeroDeRuedas;
-    }
-    
-    public void setNumeroDeRuedas(String numeroDeRuedas) {
         this.numeroDeRuedas = numeroDeRuedas;
-    }
-    public String getEs4x4() {
-        return this.es4x4;
-    }
-    
-    public void setEs4x4(String es4x4) {
         this.es4x4 = es4x4;
-    }
-    public String getModelo() {
-        return this.modelo;
-    }
-    
-    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
+    public Integer getIdVehiculo() {
+        return this.idVehiculo;
+    }
 
+    public void setIdVehiculo(Integer idVehiculo) {
+        this.idVehiculo = idVehiculo;
+    }
 
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getEsAutomatico() {
+        return this.esAutomatico;
+    }
+
+    public void setEsAutomatico(String esAutomatico) {
+        this.esAutomatico = esAutomatico;
+    }
+
+    public String getNumeroDeRuedas() {
+        return this.numeroDeRuedas;
+    }
+
+    public void setNumeroDeRuedas(String numeroDeRuedas) {
+        this.numeroDeRuedas = numeroDeRuedas;
+    }
+
+    public String getEs4x4() {
+        return this.es4x4;
+    }
+
+    public void setEs4x4(String es4x4) {
+        this.es4x4 = es4x4;
+    }
+
+    public String getModelo() {
+        return this.modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+     
+     
+    
+    
+
+   
+   
+   
+   
 
 }
 
